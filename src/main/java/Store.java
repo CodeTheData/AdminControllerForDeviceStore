@@ -1,4 +1,4 @@
-import models.Device;
+import Entity.Device;
 import services.*;
 
 import java.sql.SQLException;

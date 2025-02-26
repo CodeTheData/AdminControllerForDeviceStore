@@ -1,14 +1,38 @@
-package models;
+package Entity;
+
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "devices")
 
 public class Device {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
 
-    private String brand;
-    private String nameDevice;
+    @Column(name = "type_device")
     private String typeDevice;
+
+    @Column(name = "brand")
+    private String brand;
+
+    @Column(name = "name_device")
+    private String nameDevice;
+
+    @Column(name = "ram")
     private int ram;
+
+    @Column(name = "ssd")
     private int ssd;
+
+    @Column(name = "price")
     private int price;
+
+    @Column(name = "quantity")
     private int quantity;
+
+    public Device() {
+    }
 
     public Device(String typeDevice, String brand, String nameDevice, int ram, int ssd, int price, int quantity) {
         this.typeDevice = typeDevice;
@@ -18,6 +42,14 @@ public class Device {
         this.ssd = ssd;
         this.price = price;
         this.quantity = quantity;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getTypeDevice() {
@@ -51,9 +83,10 @@ public class Device {
     @Override
     public String toString() {
         return "Device{" +
-                "brand='" + brand + '\'' +
-                ", nameDevice='" + nameDevice + '\'' +
+                "id=" + id +
                 ", typeDevice='" + typeDevice + '\'' +
+                ", brand='" + brand + '\'' +
+                ", nameDevice='" + nameDevice + '\'' +
                 ", ram=" + ram +
                 ", ssd=" + ssd +
                 ", price=" + price +

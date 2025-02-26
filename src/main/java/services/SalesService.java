@@ -1,6 +1,6 @@
 package services;
 
-import models.Device;
+import Entity.Device;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

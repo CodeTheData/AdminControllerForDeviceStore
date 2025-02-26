@@ -1,6 +1,6 @@
 package services;
 
-import models.Device;
+import Entity.Device;
 
 import java.sql.SQLException;
 import java.util.Scanner;
