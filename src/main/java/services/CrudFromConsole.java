@@ -1,6 +1,10 @@
 package services;
 
+<<<<<<< HEAD
 import models.Device;
+=======
+import Entity.Device;
+>>>>>>> role
 
 import java.sql.SQLException;
 import java.util.Scanner;

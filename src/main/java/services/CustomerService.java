@@ -1,6 +1,10 @@
 package services;
 
+<<<<<<< HEAD
 import models.Customer;
+=======
+import Entity.Customer;
+>>>>>>> role
 
 import java.util.Date;
 import java.util.HashMap;
@@ -59,7 +63,11 @@ public class CustomerService {
                     System.out.println("Номер телефона должен состоять из 11 цифр!");
                     return null;
                 }
+<<<<<<< HEAD
                 customer= new Customer(firstName, lastName, address, phone, new Date());
+=======
+//                customer= new Customer(firstName, lastName, address, phone, new Date());
+>>>>>>> role
 
                 System.out.printf("Клиент с никнеймом - %s, занесен в базу.\n", customer.getFirstName());
 

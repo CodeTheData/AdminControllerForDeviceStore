@@ -1,6 +1,10 @@
 package services;
 
+<<<<<<< HEAD
 import models.Device;
+=======
+import Entity.Device;
+>>>>>>> role
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

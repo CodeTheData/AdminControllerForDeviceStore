@@ -1,6 +1,5 @@
 import models.Device;
 import services.*;
-
 import java.sql.SQLException;
 import java.util.Scanner;
 
