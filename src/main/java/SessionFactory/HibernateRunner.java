@@ -2,6 +2,7 @@ package SessionFactory;
 
 //обязательно эту библиотеку
 import Entity.Customer;
+import Entity.Role;
 import org.hibernate.cfg.Configuration;
 
 
@@ -17,13 +18,14 @@ public class HibernateRunner {
               var session = sessionFactory.openSession()) {
             session.beginTransaction();
             session.persist(Customer.builder()
-                            .id(3)
+                            .id(12)
                             .firstName("Vlad")
-                            .lastName("Fifer")
+                            .lastName("Hoho")
                             .address("2025 street")
                             .phone("77777777777")
 //                        .date(new Date())
-                            .age(1)
+                            .age(12)
+                            .role(Role.USER)
                             .build()
             );
             session.getTransaction().commit();
